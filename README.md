@@ -22,3 +22,10 @@ adecuadamente documentada con docstrings para su correcta interpretación.
 Entregables:
   1. Enlace a GitHub con el código del proyecto y el script de creación de la base de datos relacional.
   2. Un ejemplo del archivo Excel de salida.
+#Operación
+model.py, es donde se crea el modelo de la base de datos
+fetch_data.py, es donde recopilo toda la información necesaria de la API
+metrics.py, es donde hago los KPI y gráficos para despues meterlo al excel 
+email_send.py, crea y manda el email al mail en cuestion
+main.py articula todas las cuestiones, además de crear el excel, le ejecuta metrics.py y ejecuta email_send.py
+daily.py, se encarga de mandar el email todos los dias a la misma hora que ejecutaste daily.py por primera vez
